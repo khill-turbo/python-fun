@@ -10,8 +10,8 @@ import sys
 def sockMerchant(n, ar):
     # count how many of each unique integer
     new_set_ar = set(ar)
-    divsbytwo = int(0)
-    total = int(0)
+    divsbytwo = 0
+    total = 0
     for h in new_set_ar:
         indices = [i for i, x in enumerate(ar) if x == h]
         # then divide by 2 and throw out remainder
