@@ -29,7 +29,7 @@ def jumpingOnClouds(c):
 
 
 if __name__ == '__main__':
-    # To run set OUTPUT_PATH ex: OUTPUT_PATH = "/my/dir/and/filename.txt"
+    # To run set OUTPUT_PATH ex: OUTPUT_PATH=/my/dir/and/filename.txt
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input())
