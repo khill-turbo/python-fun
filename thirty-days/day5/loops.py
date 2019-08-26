@@ -8,8 +8,5 @@ import sys
 
 if __name__ == '__main__':
     n = int(input())
-    i = 1
-    while (i <= 10):
-        total = (n*i)
-        print(n, " x ", i, " = ", total)
-        i += 1
+    for i in range(1,11):
+        print("{} x {} = {}".format(n, i, (n*i)))
