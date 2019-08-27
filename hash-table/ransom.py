@@ -18,8 +18,7 @@ def checkMagazine(magazine, note):
         print("Yes")
     else:
         print("No")
-
-"""
+    """
     # too slow for large cases
     while len(note) > 0:
         if note[0] in magazine:
