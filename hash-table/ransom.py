@@ -12,7 +12,7 @@ def checkMagazine(magazine, note):
     """The result of counters' operator substraction is a counter that shows 
     how many more values magazine is missing to match those present in rasom. 
     When an empty dict is returned, every element in rasom is present enough 
-    times in magazine. """
+    times in magazine."""
     result = (Counter(note) - Counter(magazine)) == {}
     if result == True:
         print("Yes")
