@@ -6,6 +6,8 @@ import re
 import sys
 
 if __name__ == '__main__':
+    # TODO: try using 2 dictionaries to make this run more efficiently 
+    
     t = int(input())
 
     thisdict = dict()
