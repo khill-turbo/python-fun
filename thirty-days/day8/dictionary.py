@@ -5,23 +5,21 @@ import random
 import re
 import sys
 
-if __name__ == '__main__':
-    # TODO: try using 2 dictionaries to make this run more efficiently 
-    
+if __name__ == '__main__':    
     t = int(input())
 
-    thisdict = dict()
     inputs = []
     for i in range(t*2):
         inputs.append(input())
 
+    # put the name and numbers into a dictionary
+    namenumDict = dict()
     for i in range(t):
-        thisdict.update(x.split(' ') for x in (inputs[i]).split(','))
+        namenumDict.update(x.split(' ') for x in (inputs[i]).split(','))
 
-    holder = thisdict.keys()
+    # look through the second half of the inputs
     for i in range(t,((t*2))):
-        if (inputs[i]) not in holder:
+        if (inputs[i]) not in namenumDict:
             print("Not found")
         else:
-            print((inputs[i])+"="+(thisdict.get(inputs[(i)])))
-
+            print((inputs[i])+"="+(namenumDict.get(inputs[(i)])))
