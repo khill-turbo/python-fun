@@ -10,12 +10,12 @@ class Solution:
             current = current.next
 
     def insert(self,head,data): 
-    #Complete this method
         if (head == None):
             head = Node(data)
         elif (head.next == None):
             head.next = Node(data)
         else: 
+            # use recursion to get to walk down the list
             self.insert(head.next, data)
         return head
 
