@@ -1,21 +1,23 @@
 def digital_root(n):
-    print(n)
-
-    myList = []
-    print(myList)
-
-    myAdder = 0
-    print(myAdder)
     
-    myString = str(n)
+    while n > 9:
+        #print(n)
+        myList = []
+        myString = str(n)
+        for i in myString:
+            myAdder = 0
+            myIntPartTwo = int(i)
+            myList.append(myIntPartTwo)
+            #print(myList)
+            #print("myAdder = ", myAdder)
+            for j in myList:
+                #print("j = ", j)
+                myAdder = (myAdder + j)
+            #print("myAdder = ", myAdder)
+        n = myAdder
+
+    #print("myAdder = ", myAdder)
+    #print("n = ", n)
+    #print("myString = ", myString)
     
-    for i in myString:
-        myIntPartTwo = int(i)
-        myList.append(myIntPartTwo)
-        myAdder = (myAdder + myIntPartTwo)
-        
-    print(myAdder)
-    if myAdder > 9:
-        digital_root(myAdder)
-    else:
-        return(myAdder)
+    return(myAdder)
